@@ -3,12 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/output.css">
     <title>Tip Calculator App</title>
 </head>
-<body>
+<body class="font-bold">
+    <main class=" h-screen bg-light_gray_cyan">
+        <h1 class=" text-very_dark_cyan">SPLITTER</h1>
+        <form class=" bg-very_light_gray_cyan rounded-xl p-4">
+            <h3>Bill</h3>
+            <input type="number" name="" id="">
+            <h3>Select Tip %</h3>
+            <div>
+                <button class="bg-very_dark_cyan text-white py-2 text-lg text-center w-full rounded-md">5%</button>
+            </div>
+            <h3>Number of People</h3>
+            <input type="number" name="" id="">
+            <section>
+                <div>
+                    <div>
+                        <h6>Tip Amount</h6>
+                        <p>/ person</p>
+                    </div>
+                    <h5>$</h5>
+                </div>
+                <div>
+                    <div>
+                        <h6>Total</h6>
+                        <p>/ person</p>
+                    </div>
+                    <h5>$</h5>
+                </div>
+                <button type="reset">RESET</button>
+            </section>
+        </form>
+    </main>
 
-    
     <script src="js/main.js"></script>
 </body>
 </html>
