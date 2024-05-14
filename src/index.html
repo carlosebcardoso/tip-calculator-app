@@ -10,17 +10,23 @@
     <title>Tip Calculator App</title>
 </head>
 <body class="font-bold">
-    <main class=" h-screen bg-light_gray_cyan">
+    <main class=" h-screen bg-light_gray_cyan flex flex-col justify-between">
         <h1 class=" text-very_dark_cyan">SPLITTER</h1>
-        <form class=" bg-white rounded-xl p-6">
+        <form class=" bg-white rounded-t-xl p-6 flex flex-col gap-y-3">
             <h3 class="text-dark_cyan text-sm">Bill</h3>
-            <input type="number" id="bill-input" class="w-full bg-very_light_gray_cyan h-8 rounded-md text-end [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none">
+            <div class="w-full bg-very_light_gray_cyan h-10 rounded-md flex items-center px-2">
+                <p class="text-xl font-light text-gray_cyan">$</p>
+                <input type="number" id="bill-input" class="text-lg text-very_dark_cyan marker w-full bg-transparent overflow-hidden text-end [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none">
+            </div>
             <h3 class="text-dark_cyan text-sm">Select Tip %</h3>
             <div id="tip-buttons" class="grid grid-cols-2 gap-3">
                 <button id="custom-button" class="bg-very_light_gray_cyan text-dark_cyan py-2 text-xl text-center rounded-md">Custom</button>
             </div>
             <h3 class="text-dark_cyan text-sm">Number of People</h3>
-            <input type="number" id="people-input" class="w-full bg-very_light_gray_cyan h-8 rounded-md p-x-3 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none">
+            <div class="w-full bg-very_light_gray_cyan h-8 rounded-md flex items-center px-2">
+                <p class="text-2xl font-light text-gray_cyan">$</p>
+                <input type="number" id="people-input" class="w-full bg-transparent overflow-hidden text-end [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none">
+            </div>
             <section class="bg-very_dark_cyan p-4 rounded-lg">
                 <div class="flex items-end justify-between mb-4 mt-3">
                     <div>
